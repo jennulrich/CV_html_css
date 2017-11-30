@@ -49,6 +49,10 @@ nav ul li a {
     opacity: 0.8;
 }
 
+.coordonnees {
+    margin: auto 0;
+}
+
 .jobTitle {
     text-align: center;
     padding-bottom: 15px;
