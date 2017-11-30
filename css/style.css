@@ -3,6 +3,10 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+p {
+    line-height: 0.5;
+}
+
 /***************************** HEADER ****************************/
 header {
 
@@ -37,15 +41,18 @@ nav ul li a {
 }
 
 .profil {
-    /*display: flex;
-    justify-content: space-evenly;*/
-    background: url("dust_scratches.png");
+    display: flex;
+    background: url("../img/dust_scratches.png");
     width: 30%;
     padding: 20px 0 0 0;
     text-align: center;
     height: 92vh;
     position: fixed;
     margin-top: 5vh;
+}
+
+.entireProfil {
+    margin: auto;
 }
 
 .profil img {
@@ -62,20 +69,29 @@ nav ul li a {
 
 .jobTitle {
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
     font-family: 'Patrick Hand', cursive;
 }
 
 /***************************** FORMATION ****************************/
-.formation, .xpPro {
+.formation, .xpPro, .portfolio {
     width: 70%;
     margin-left: 30%;
-    height: 95vh;
-    padding-top: 5vh;
-    background: #f9f9f9;
+    min-height: 100vh;
+    /*padding-top: 5vh;*/
+    display: flex;
 }
 
-.formTitle {
+.portfolio { background: #e5fbfc; }
+
+.formation, .xpPro { background: #f9f9f9; }
+
+.entireFormation, .entirePortfolio, .entireXp {
+    margin: auto;
+    width: 80%;
+}
+
+.formTitle, .portTitle, .xpTitle {
     padding: 30px 0 10px 30px;
     text-transform: uppercase;
 }
@@ -95,19 +111,6 @@ div.ipssi, div.troisW, div.scarron {
 p.boldDescription, span.boldDescription {
     font-weight: 700;
     text-transform: capitalize;
-}
-
-.portfolio {
-    width: 70%;
-    margin-left: 30%;
-    height: 95vh;
-    padding-top: 5vh;
-    background: #e5fbfc;
-}
-
-.portTitle, .xpTitle {
-    padding: 0 0 10px 30px;
-    text-transform: uppercase;
 }
 
 ul.listeRealisations {
